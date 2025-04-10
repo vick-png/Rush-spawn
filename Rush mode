@@ -69,7 +69,7 @@ achievementGiver({
     Title = "Escape from Nightmare",
     Desc = "Stop Hide",
     Reason = "Encounter Nightmare Rush",
-    Image = "rbxassetid://"
+    Image = "rbxassetid://104903899351090"
 })
 end
  
@@ -125,7 +125,7 @@ achievementGiver({
     Title = "Escape from Nightmare",
     Desc = "Don't Hide...",
     Reason = "Encounter Nightmare Rush",
-    Image = "rbxassetid://"
+    Image = "rbxassetid://104903899351090"
 })
 end
 ------------------------
