@@ -3,7 +3,7 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd
 
 
 local entity = Creator.createEntity({
-    CustomName = "Smiler", -- Custom name of your entity
+    CustomName = "Nightmare Rush", -- Custom name of your entity
     Model = "https://github.com/vick-png/Rush/blob/main/rush.rbxm?raw=true", -- Can be GitHub file or rbxassetid
     Speed = 130, -- Percentage, 100 = default Rush speed
     DelayTime = 12, -- Time before starting cycles (seconds)
