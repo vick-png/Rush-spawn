@@ -26,6 +26,12 @@ local entity = Creator.createEntity({
         {20, 20, 1, 2}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
+    Crucifixion = {
+		Enabled = true,
+		Range = 40,
+		Resist = false,
+		Break = true
+	},
     Jumpscare = {
         true, -- Enabled/Disabled
         {
