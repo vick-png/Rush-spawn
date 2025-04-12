@@ -1,8 +1,8 @@
-local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource"))()
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V2/Source.lua"))()
 -- Create entity
 
 
-local entity = Creator.createEntity({
+local entity = Spawner.createEntity({
     CustomName = "Nightmare Rush", -- Custom name of your entity
     Model = "https://github.com/vick-png/Rrush/blob/main/rrushai.rbxm?raw=true", -- Can be GitHub file or rbxassetid
     Speed = 130, -- Percentage, 100 = default Rush speed
