@@ -1,8 +1,7 @@
-local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/MuhXd/DoorSuff/main/OtherSuff/DoorEntitySpawn%2BSource"))()
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Entity%20Spawner/V1/Source.lua"))()
 -- Create entity
 
-
-local entity = Creator.createEntity({
+local entity = Spawner.createEntity({
     CustomName = "Nightmare Rush", -- Custom name of your entity
     Model = "https://github.com/vick-png/Rush-red/blob/main/rushdo.rbxm?raw=true", -- Can be GitHub file or rbxassetid
     Speed = 130, -- Percentage, 100 = default Rush speed
@@ -26,12 +25,6 @@ local entity = Creator.createEntity({
         {20, 20, 1, 2}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
-    Crucifixion = {
-		Enabled = true,
-		Range = 40,
-		Resist = false,
-		Break = true
-	},
     Jumpscare = {
         true, -- Enabled/Disabled
         {
@@ -57,6 +50,9 @@ local entity = Creator.createEntity({
             },
         },
     },
+ResistCrucifix = false,
+    BreakCrucifix = true
+},
     CustomDialog = {"You died to who you call Ripper.", "You can tell his presence by the lights and his scream.", "Hide when he does this!"}, -- Custom death message
 })
  
@@ -122,6 +118,14 @@ DeathHint({
     "Hide and survival",
     "Let try again!"
 }, "Blue") -- "Blue" or "Yellow"
+
+--[[
+    NOTE: By overwriting 'OnUseCrucifix', the default crucifixion will be ignored and this function will be called instead
+ 
+    entity.Debug.OnUseCrucifix = function()
+        print("Custom crucifixion script here")
+    end
+]]--
 
 ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
